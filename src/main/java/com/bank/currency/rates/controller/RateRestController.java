@@ -33,7 +33,6 @@ public class RateRestController {
     }
 
     @GetMapping("delete/{date}")
-    @DeleteMapping("delete/{date}")
     public ResponseEntity<List<RateDto>> deleteRatesForDate(@PathVariable LocalDate date) {
         List<RateDto> list = rateService.deleteForDate(date);
         log.info("Rates for {} were deleted", date);

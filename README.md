@@ -1,18 +1,18 @@
 # Getting Started
 
 ### There are two available profiles:
-### set JVM option for it accordingly:
 
-#### dev     -Dspring.profiles.active=dev
+#### dev, mock     
 
-#### mock    -Dspring.profiles.active=mock
-#### mock files are stored: /resources/mocks/
+#### mock filerefactorings are stored: /resources/mocks/
 
 ### Api has three endpoints:
 
 * GET /rates/fortoday  - fetches rates for current day
 * GET /rates/fordate/{date} -fetches rates for specified date
-* DELETE, GET /rates/delete/{date} (Get is used for test purpose)
+* GET /rates/delete/{date} 
+
+get methods are chosen for compability with any browsers
 
   (date format for all endpoints is following: YYYY-MM-DD)
 
