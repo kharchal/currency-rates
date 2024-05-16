@@ -4,7 +4,7 @@
 
 #### dev, mock     
 
-#### mock filerefactorings are stored: /resources/mocks/
+#### mock files are stored: /resources/mocks/
 
 ### Api has three endpoints:
 
